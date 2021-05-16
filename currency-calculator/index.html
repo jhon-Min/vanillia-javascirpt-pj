@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>MMS Exchange</title>
+    <meta name="title" content="MMS Exchange">
+    <meta name="description" content="Development version for my client.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spacelab.com/">
+    <meta property="og:title" content="MMS Exchange">
+    <meta property="og:description" content="Development version for my client.">
+    <meta property="og:image" content="./img/logo.png">
+
+    <title>Exchange Calculator</title>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Local Fontawesome -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+
+    <!-- Local animate -->
+    <link rel="stylesheet" href="vendor/animate-it/animate.min.css">
+
+    <!-- BootStrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <div class="row">
+                <div class="col-12">
+                    <div class="output">
+                        <div class="brand-box">
+                            <img src="img/logo.png" alt="logo image">
+                            <p class="logo-name">MMEx</p>
+                        </div>
+                        <div class="result-box">
+                            <p class="result" id="result">0.00</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                             <form action="" id="calc">
+                                 <div class="operation" id="run">
+                                     <div class="input-box boxs">
+                                         <label>Input</label>
+                                         <input type="number" class="input" id="input" placeholder="00.0" autofocus required>
+                                     </div>
+
+                                     <div class="from-box boxs">
+                                         <label>From</label>
+                                         <select name="from" id="from" class="from" required>
+                                             <option value="" selected>Select Currency</option>
+                                         </select>
+                                     </div>
+
+                                     <div class="to-box boxs">
+                                         <label>To</label>
+                                         <select name="to" id="to" class="to" required></select>
+                                     </div>
+                                     
+                                     <div class="btn-box boxs">
+                                         <button class="calc-btn">CALCULATE</button>
+                                     </div>
+                                 </div>
+                             </form>
+                        </div>
+                    </div>
+
+                    <div class="history-box">
+                        <table class="table">
+                          <thead class="history-head">
+                            <tr>
+                              <th>Date</th>
+                              <th>From</th>
+                              <th>To</th>
+                              <th>Result</th>
+                            </tr>
+                          </thead>
+                          <tbody id="history-list">
+                            
+                          </tbody>
+                        </table>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
