@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Movie Booking</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container px-5 text-light">
+
+        <form action="" id="add-booking">
+            <!-- Header -->
+            <div class="header d-flex justify-content-between my-4 align-items-center">
+                <div class="logo">
+                    <h3 class="mb-0">Movie Seat Booking</h3>
+                    <small class="primary-col">
+                        Bootstrap & JS
+                    </small>
+                </div>
+
+                <div class="movie-box">
+                    <select name="" id="movie-list" class="form-control">
+                        <option value="Movie">All Category</option>
+                        <option value="Joker">Joker</option>
+                        <option value="Avengers">Avengers</option>
+                        <option value="Return of SuperMan">Return of SuperMan</option>
+                        <option value="The Great Getsby">The Great Getsby</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Notice -->
+            <div class="notice mt-3">
+                <div class="row justify-content-center">
+                    <ul class="showcase list-inline mw-50 d-flex justify-content-between pt-3 px-lg-5 px-3">
+                        <li>
+                            <div class="seat-info"></div>
+                            <p class="px-2">N/A</p>
+                        </li>
+                        <li>
+                            <div class="seat-info selected"></div>
+                            <p class="px-2">Selected</p>
+                        </li>
+                        <li>
+                            <div class="seat-info occupied"></div>
+                            <p class="px-2">Occupied</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="seat-price">
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-inline d-flex showcase mw-25 px-3 pt-3 py-2 justify-content-center">
+                            <li class="mr-4">
+                                <h5><span class="primary-col">A </span>2000</h5>
+                            </li>
+                            <li class="">
+                                <h5><span class="primary-col">B </span> 3500</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Therater -->
+            <div class="therater">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-9 col-lg-7">
+                        <div class="screen">
+                        </div>
+
+                        <!-- A Row -->
+                        <ul class="list-inline row seat-row justify-content-center align-items-center">
+
+                            <li class="seat text-center pt-2" value="2000">
+                                A1
+                            </li>
+                            <li class="seat text-center pt-2" value="2000">
+                                A2
+                            </li>
+
+                            <div class="d-flex mx-md-3 mx-5 mx-lg-4 my-2 my-md-0 my-lg-0">
+                                <li class="seat text-center pt-2" value="2000">
+                                    A3
+                                </li>
+                                <li class="seat text-center pt-2" value="2000">
+                                    A4
+                                </li>
+                                <li class="seat text-center pt-2" value="2000">
+                                    A5
+                                </li>
+                                <li class="seat text-center pt-2" value="2000">
+                                    A6
+                                </li>
+                                <li class="seat text-center pt-2" value="2000">
+                                    A7
+                                </li>
+                            </div>
+
+                            <li class="seat text-center pt-2" value="2000">
+                                A8
+                            </li>
+                            <li class="seat text-center pt-2" value="2000">
+                                A9
+                            </li>
+
+                        </ul>
+
+                        <!-- B Row -->
+                        <ul
+                            class="list-inline row seat-row justify-content-center align-items-center mt-5 mt-md-0 mt-lg-0">
+
+                            <li class="seat text-center pt-2" value="3500">
+                                B1
+                            </li>
+                            <li class="seat text-center pt-2" value="3500">
+                                B2
+                            </li>
+
+                            <div class="d-flex mx-md-3 mx-5 mx-lg-4 my-2 my-md-0 my-lg-0">
+                                <li class="seat text-center pt-2" value="3500">
+                                    B3
+                                </li>
+                                <li class="seat text-center pt-2" value="3500">
+                                    B4
+                                </li>
+                                <li class="seat text-center pt-2" value="3500">
+                                    B5
+                                </li>
+                                <li class="seat text-center pt-2" value="3500">
+                                    B6
+                                </li>
+                                <li class="seat text-center pt-2" value="3500">
+                                    B7
+                                </li>
+                            </div>
+
+                            <li class="seat text-center pt-2" value="3500">
+                                B8
+                            </li>
+                            <li class="seat text-center pt-2" value="3500">
+                                B9
+                            </li>
+
+                        </ul>
+
+                        <div class="text-center mt-4">
+                            <p>You have Selected <span class="primary-col" id="seat-num">0</span> seats for <span
+                                    class="primary-col" id="current-movie">Movies</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center my-4">
+                    <button class="btn btn-success">Add Booking</button>
+                </div>
+        </form>
+
+
+        <div class="row justify-content-center my-5">
+            <div class="col-12 col-md-9">
+                <!-- Seat Details Vouncher -->
+
+                <table class="table table-hover table-dark custom-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Seats</th>
+                            <th scope="col">Movie</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Booking Details -->
+                    <tbody id="details">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

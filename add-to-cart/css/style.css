@@ -1,0 +1,26 @@
+.product-card{
+    border: none !important;
+}
+
+.cart-card{
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgb(235, 229, 229) !important;;
+}
+
+.cart-img{
+    width: auto;
+    height: 80px;
+}
+
+.product-img{
+    width: auto;
+    height: 100px;
+   margin-bottom: -50px;
+   margin-left: 2rem;
+   transition: 0.5s;
+}
+
+.product-img:hover{
+    transform: scale(1.1) rotate(-10deg);
+}

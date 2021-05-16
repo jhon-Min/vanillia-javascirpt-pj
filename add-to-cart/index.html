@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="row">
+
+            <!-- Product Page -->
+            <div class="col-8 border-right min-vh-100">
+                <!-- Header -->
+                <div class="header my-3 d-flex justify-content-between align-items-end">
+                    <div>
+                        <h3 class="text-primary mb-0">My Shop</h3>
+                        <small class="text-black-50 font-weight-bold">Bootstrap, JS & Jquery</small>
+                    </div>
+
+                    <div class="form-row">
+                        <form id="searchForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Products" required>
+                            </div>
+                        </form>
+
+                        <div class="px-2">
+                            <select name="" id="categories" class="custom-select">
+                                <option value="0">All Category</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products List -->
+                <div id="products-list" class="card-columns">
+
+                </div>
+            </div>
+
+            <!-- Add to Cart Page -->
+            <div class="col-4">
+                <!-- Cart Header -->
+                <div class="my-3 d-flex justify-content-between align-items-end">
+                    <div>
+                        <h3 class="text-primary mb-0">My Cart</h3>
+                        <small>
+                            Added Items
+                        </small>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <h5 class="text-black-50 mr-1" id="cart-qt">0</h5>
+                        <h4><i class="fas fa-cart-plus text-primary"></i></h4>
+                    </div>
+                </div>
+
+                <!-- Items in Cart -->
+                <div id="carts">
+
+                </div>
+
+                <!-- Cart Total -->
+                <div id="total">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="vendor/jquery.js"></script>
+    <script src="js/add_cart.js"></script>
+</body>
+
+</html>

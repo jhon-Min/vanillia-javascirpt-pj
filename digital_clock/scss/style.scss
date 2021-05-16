@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$primary-font: Lato,
+sans-serif;
+
+$pri-col: #2E94E3;
+
+
+body {
+    background-color: #10101E !important;
+}
+
+
+.clock {
+    background-color: #10101E;
+    color: #fff;
+    font-family: $primary-font;
+    border: 3px solid $pri-col;
+    padding: 18px 0;
+    width: 330px;
+    border-radius: 10px;
+    -webkit-box-reflect: below 3px linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+    transition: 0.5s;
+    // transition-property: boxshadow;
+
+    .date {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .time {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 3px;
+
+        .period {
+            font-size: 20px;
+            background-color: $pri-col;
+            padding: 0 3px;
+            border-radius: 3px;
+        }
+    }
+
+    &:hover {
+        background-color: $pri-col;
+        box-shadow: 0 0 20px $pri-col;
+    }
+}

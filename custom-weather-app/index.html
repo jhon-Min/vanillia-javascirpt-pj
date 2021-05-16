@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <title>My Weather App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-12 col-md-7">
+                <div>
+                    <div class="custom-card card">
+                        <div class="p-4 card-body">
+                            <form class="search-box">
+                                <input type="text" placeholder="City Name" name="city" required>
+                                <button class="btn btn-search ml-3"><i class="fas fa-search-location"></i></button>
+                            </form>
+
+                            <div class="my-4 weather-info px-3 " id="details">
+                                <div class="d-flex justify-content-start align-items-center mb-0">
+                                    <h4 class="mb-2">Weather in City</h4>
+                                    <h3 class="mx-1 badge-info text-white mx-2"> Country</h3>
+                                </div>
+                                <p class="mb-0"><span class="temp-icon"><i class="fas fa-thermometer-three-quarters"></i></span>9.82C</p>
+                                <div class="icon d-flex align-items-center">
+                                    <p class="mt-2">cloudy</p>
+                                    <img src="img/icons/44.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+    <script src="js/forcast.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

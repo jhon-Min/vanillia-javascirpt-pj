@@ -1,0 +1,81 @@
+body{
+    background-color: #242333;
+}
+
+
+.showcase{
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.showcase li{
+    display: flex;
+}
+
+.seat-info {
+    background-color: #444451;
+    height: 18px;
+    width: 20px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .seat {
+    background-color: #444451;
+    height: 40px;
+    width:  40px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.5s;
+  }
+
+  .seat:hover{
+     background-color: #6feaf6;
+  }
+
+  .seat-row{
+      font-weight: bold;
+  }
+
+.selected {
+    background-color: #6feaf6;
+    color: #242333;
+}
+.occupied {
+    background-color: #fff;
+    color: black;
+}
+
+.screen {
+    background-color: #fff;
+    height: 150px;
+    width: 90%;
+    margin: 15px auto;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.custom-table{
+     border-radius: 5px !important;
+}
+
+.primary-col{
+    color: #6feaf6 ;
+}
+
+@media screen and (max-width: 720px) {
+    .logo{
+        margin-right: 15px;
+    }
+    .logo h3{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .movie-box{
+        font-size: 12px !important;
+        /* width: 50% !important; */
+    }
+}
